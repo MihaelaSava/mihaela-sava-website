@@ -37,3 +37,7 @@
 !/app/assets/builds/.keep
 
 /node_modules
+
+# Ignore Kamal secrets and local deployment files
+.kamal/secrets.*.env
+.kamal/lock-*
