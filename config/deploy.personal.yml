@@ -1,0 +1,39 @@
+# config/deploy.personal.yml
+
+service: mihaela_sava_website
+image: mihaelasava/mihaela_sava_website
+
+servers:
+  web:
+    - 164.92.244.56  # IP-ul serverului DigitalOcean
+
+registry:
+  server: ghcr.io
+  username: MihaelaSava
+  password:
+    - KAMAL_REGISTRY_PASSWORD
+
+env:
+  clear:
+    RAILS_ENV: production
+    RAILS_LOG_TO_STDOUT: "true"
+    RAILS_SERVE_STATIC_FILES: "true"
+  secret:
+    - SECRET_KEY_BASE
+
+ssh:
+  user: root
+  port: 22
+  keys:
+    - ~/.ssh/id_ed25519_personal
+
+builder:
+  local: true
+
+accessories: {}
+
+proxy:
+  host: "mihaela-sava.com"
+  ssl:
+    enabled: true
+    email: "contact@mihaela-sava.com"
