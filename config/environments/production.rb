@@ -95,4 +95,8 @@ Rails.application.configure do
   config.hosts << "mihaela-sava.com"
   config.hosts << "www.mihaela-sava.com"
   config.hosts << "164.92.244.56"
+
+  # Allow health checks from Kamal proxy (internal Docker hostnames)
+  config.hosts << /[a-f0-9]+/
+  config.host_authorization = { exclude: ->(request) { request.path == "/up" } }
 end
