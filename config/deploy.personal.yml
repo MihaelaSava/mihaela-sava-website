@@ -41,7 +41,6 @@ proxy:
   hosts:
     - mihaela-sava.com
     - www.mihaela-sava.com
-  image: basecamp/kamal-proxy:v1.2.0
   ssl:
     enabled: true
     email: "contact@mihaela-sava.com"
