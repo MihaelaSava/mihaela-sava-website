@@ -41,3 +41,8 @@
 # Ignore Kamal secrets and local deployment files
 .kamal/secrets.*.env
 .kamal/lock-*
+
+# Local development extras
+.kamal/secrets.personal
+.ruby-gemset
+/vendor/bundle/
