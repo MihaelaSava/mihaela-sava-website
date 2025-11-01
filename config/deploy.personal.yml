@@ -39,6 +39,7 @@ accessories: {}
 
 proxy:
   hosts:
+    - 164.92.244.56        # IP-ul serverului
     - mihaela-sava.com
     - www.mihaela-sava.com
   ssl:
