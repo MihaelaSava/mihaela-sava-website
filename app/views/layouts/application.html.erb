@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html class="h-full">
   <head>
     <title><%= content_for(:title) || "Mihaela Sava" %></title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -14,18 +14,32 @@
     <%#= tag.link rel: "manifest", href: pwa_manifest_path(format: :json) %>
 
     <%= favicon_link_tag "favicon.ico" %>
-    <%# <link rel="icon" href="/favicon.ico?v=3" type="image/x-icon"> %>
-    <%# <link rel="icon" href="/icon.png" type="image/png"> %>
-    <%# <link rel="icon" href="/icon.svg" type="image/svg+xml"> %>
     <link rel="apple-touch-icon" href="/icon.png">
 
     <%# Includes all stylesheet files in app/assets/stylesheets %>
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
-
     <%= javascript_importmap_tags %>
   </head>
 
-  <body>
-    <%= yield %>
+  <body class="">
+    <%= render NavbarComponent.new(
+      brand_name: "Mihaela",
+      active_path: request.path,
+      current_user: defined?(current_user) ? current_user : nil,
+      items: [
+        { name: "Home", path: root_path },
+        { name: "Botany Projects", path: "#" },
+        { name: "Dev Projects", path: "#" },
+        { name: "About Me", path: "#" }
+      ]
+    ) %>
+
+    <main class="min-h-[80vh]">
+      <%= yield %>
+    </main>
+
+    <footer class="border-t border-gray-200 text-sm text-gray-600 text-center py-4">
+      © <%= Time.current.year %> Mihaela Sava · Botanist & Developer 🌿
+    </footer>
   </body>
 </html>

@@ -1,6 +1,13 @@
-<div class="overlay"></div>
-<div class="container">
-  <h1>Hi! I'm Mihaela Sava</h1>
-  <p>My website will be blossoming soon!</p>
-  <div>📧 <a href="mailto:contact@mihaela-sava.com">contact@mihaela-sava.com</a></div>
-</div>
+<section class="relative min-h-screen flex flex-col items-center justify-center bg-cover bg-center text-white"
+         style="background-image: url('<%= asset_path('background.jpg') %>')">
+  <div class="absolute inset-0"></div>
+
+  <div class="relative z-10 text-center">
+    <h1 class="text-5xl font-bold mb-6">Hi! I'm Mihaela Sava</h1>
+    <p class="text-2xl mb-8">My website will be blossoming soon!</p>
+    <p class="text-lg">
+      📧 <a href="mailto:contact@mihaela-sava.com"
+            class="underline hover:text-green-300 transition">contact@mihaela-sava.com</a>
+    </p>
+  </div>
+</section>

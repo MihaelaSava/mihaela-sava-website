@@ -2,9 +2,11 @@
   "name": "app",
   "private": "true",
   "dependencies": {
-    "sass": "^1.93.2"
+    "@tailwindcss/cli": "^4.1.16",
+    "sass": "^1.93.2",
+    "tailwindcss": "^4.1.16"
   },
   "scripts": {
-    "build:css": "sass ./app/assets/stylesheets/application.scss:./app/assets/builds/application.css --no-source-map --load-path=node_modules"
+    "build:css": "npx @tailwindcss/cli -i ./app/assets/tailwind/application.css -o ./app/assets/builds/application.css --minify"
   }
 }
