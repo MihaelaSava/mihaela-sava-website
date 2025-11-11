@@ -2,7 +2,7 @@
 service: mihaela_sava_website
 
 # Name of the container image
-image: mihaelasava/mihaela_sava_website
+image: mihaelaandreeasava/mihaela_sava_website
 
 # Servers
 servers:
@@ -14,34 +14,33 @@ proxy:
   ssl: true
   host: mihaela-sava.com
 
-# Docker registry (Docker Hub in this example)
+# Docker registry (Docker Hub)
 registry:
-  server: https://index.docker.io/v1/
-  username: mihaelasava
+  username: mihaelaandreeasava
   password:
     - KAMAL_REGISTRY_PASSWORD
 
-# ENV variables (Rails credentials etc.)
+# ENV variables
 env:
   secret:
     - RAILS_MASTER_KEY
   clear:
     RAILS_ENV: production
 
-# Persistent volume for uploads (ActiveStorage, SQLite, etc.)
+# Persistent storage
 volumes:
   - "mihaela_sava_website_storage:/rails/storage"
 
-# Assets bridge for smooth version updates
+# Assets bridge
 asset_path: /rails/public/assets
 
-# Builder config
+# Builder
 builder:
   arch: amd64
   args:
-    RUBY_VERSION: ruby-3.3.6
+    RUBY_VERSION: 3.3.6
 
-# SSH user
+# SSH
 ssh:
   user: mihaela-deployer
 
