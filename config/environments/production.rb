@@ -30,7 +30,12 @@ Rails.application.configure do
   config.active_storage.service = :local
 
   # Force all access to the app over SSL, use Strict-Transport-Security, and secure cookies.
-  config.force_ssl = true
+  config.force_ssl = false
+
+  # SSL is handled by Kamal proxy (Caddy + Let's Encrypt)
+  config.action_dispatch.default_headers = {
+    "X-Forwarded-Proto" => "https"
+  }
 
   # Log to STDOUT with the current request id as a default log tag.
   config.log_tags = [ :request_id ]
