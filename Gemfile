@@ -20,7 +20,7 @@ gem "stimulus-rails"
 gem "jbuilder"
 
 # Stable version fully compatible with Rails 7.1
-gem "view_component", "~> 3.9"
+gem "view_component", "~> 4.1"
 
 # Use Tailwind CSS with Rails [https://github.com/rails/tailwindcss-rails]
 gem "tailwindcss-rails"
