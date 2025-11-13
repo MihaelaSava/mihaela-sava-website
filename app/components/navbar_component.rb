@@ -16,7 +16,7 @@ class NavbarComponent < ViewComponent::Base
     @items.select { |item| item[:policy].nil? || item[:policy].call(@current_user) }
   end
 
-  def active?(path)
-    helpers.current_page?(path) || @active_path.start_with?(path)
+  def active?(item_path)
+    @active_path.chomp("/") == item_path.chomp("/")
   end
 end

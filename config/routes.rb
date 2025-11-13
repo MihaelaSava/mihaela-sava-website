@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  # Root page
+  root "home#index"
+
   # Static pages
   get "about", to: "pages#about"
   get "botany-projects", to: "pages#botany_projects"
@@ -10,7 +13,4 @@ Rails.application.routes.draw do
 
   # Health check endpoint for Kamal
   get "/up" => proc { [ 200, {}, [ "OK" ] ] }
-
-  # Root page
-  root "home#index"
 end

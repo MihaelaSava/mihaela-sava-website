@@ -12,7 +12,9 @@ servers:
 # Enable SSL auto certification via Let's Encrypt
 proxy:
   ssl: true
-  host: mihaela-sava.com
+  hosts:
+    - mihaela-sava.com
+    - www.mihaela-sava.com
 
 # Docker registry (Docker Hub)
 registry:
