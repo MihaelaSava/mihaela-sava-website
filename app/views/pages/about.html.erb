@@ -4,5 +4,28 @@
 
 <div class="w-full flex justify-center mt-8">
   <p class="text-center text-lg text-gray-900 max-w-2xl pt-3 pb-5">
-    Wildflower researcher and programmer in the making: sprouting skills in code, blossoming in botany, and keeping kindness perennial. 💚</p>
+    Wildflower researcher and programmer in the making: sprouting skills in code, blossoming in botany, and keeping kindness 
+    <span class="relative group">
+      <span class="underline decoration-1 underline-offset-4 decoration-gray-400">perennial</span>
+      <sup class="ml-0.5 text-gray-500 cursor-help">ⓘ</sup>
+
+      <!-- Tooltip -->
+      <span
+        class="
+          absolute hidden group-hover:block
+          w-64 rounded-xl bg-white text-gray-800 shadow-xl border border-gray-200 
+          px-4 py-3 text-sm leading-snug transition
+
+          <!-- DEFAULT: left side -->
+          right-full top-1/2 -translate-y-1/2 mr-2
+
+          <!-- DESKTOP (lg+): right side -->
+          lg:left-full lg:right-auto lg:ml-2 lg:mr-0
+        "
+      >
+        something that endures across seasons and returns again and again, quietly persistent (like perennial plants)
+      </span>
+    </span>.
+    💚
+  </p>
 </div>
