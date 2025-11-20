@@ -1,7 +1,7 @@
 source "https://rubygems.org"
 
 # Gemfile
-gem "rails", "~> 7.1.3"
+gem "rails", "~> 8.0.4"
 # The modern asset pipeline for Rails [https://github.com/rails/propshaft]
 gem "propshaft"
 # Adds support for compiling SCSS (Sass) stylesheets into CSS
