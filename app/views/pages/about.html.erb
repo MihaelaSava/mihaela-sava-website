@@ -2,13 +2,14 @@
   <%= image_tag "this_is_me.png", class: "rounded-2xl shadow-xl w-80" %>
 </div>
 
-<div class="w-full flex justify-center mt-8">
+<div class="w-full flex justify-center mt-8 relative">
   <p class="text-center text-lg text-gray-900 max-w-2xl pt-3 pb-5">
+
     Wildflower researcher and programmer in the making: sprouting skills in code, blossoming in botany, and keeping kindness 
 
-    <!-- GROUP wrapper so both word + icon trigger the tooltip -->
-    <span class="relative group cursor-pointer">
+    <span class="relative group inline-block">
 
+      <!-- word trigger -->
       <button
         tabindex="0"
         class="underline decoration-1 underline-offset-4 decoration-gray-400 bg-transparent p-0 m-0 peer"
@@ -16,33 +17,35 @@
         perennial
       </button>.
 
+      <!-- info icon -->
       <button 
         tabindex="0"
-        class="ml-1 text-gray-500 text-xs cursor-help align-super peer"
+        class="hidden lg:inline-block -ml-0.5 text-gray-500 text-xs cursor-help align-super peer"
         aria-label="Definition of perennial"
       >
         ⓘ
       </button>
 
-      <!-- Tooltip -->
+      <!-- TOOLTIP: DESKTOP ONLY -->
       <span
         class="
-          absolute 
-          hidden 
-          group-hover:block               <!-- desktop hover on word OR icon -->
-          peer-focus:block                <!-- mobile tap on word OR icon -->
-          w-64 rounded-xl bg-white text-gray-800 shadow-xl border border-gray-200 
+          hidden                           /* hidden everywhere by default */
+          lg:group-hover:block
+          lg:peer-focus:block
+
+          absolute z-50
+          rounded-xl bg-white text-gray-800 shadow-xl border border-gray-200 
           px-4 py-3 text-sm leading-snug transition
 
-          <!-- DEFAULT (mobile/tablet): LEFT -->
-          right-full top-1/2 -translate-y-1/2 mr-2
-
-          <!-- DESKTOP (lg+): RIGHT -->
-          lg:left-full lg:right-auto lg:ml-2 lg:mr-0
+          /* desktop positioning */
+          lg:bottom-full lg:mb-2
+          lg:left-1/2 lg:-translate-x-1/2
+          lg:w-64
         "
       >
         something that endures across seasons and returns again and again, quietly persistent (like perennial plants)
       </span>
+
     </span>
 
     💚
