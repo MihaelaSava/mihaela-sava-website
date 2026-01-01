@@ -1,1 +1,4 @@
 @import "tailwindcss";
+
+/* custom components */
+@import "../stylesheets/domain_slider.css";

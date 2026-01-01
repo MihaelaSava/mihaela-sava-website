@@ -1,13 +1,48 @@
-<section class="relative min-h-screen flex flex-col items-center justify-center bg-cover bg-center text-white"
-         style="background-image: url('<%= asset_path('background.jpg') %>')">
-  <div class="absolute inset-0"></div>
+<main class="home">
+  <div
+    class="domain-slider"
+    data-controller="domain-slider"
+    style="
+      --left-domain: url('<%= asset_path('background.jpg') %>');
+      --right-domain: url('<%= asset_path('background_2.jpg') %>');
+    "
+  >
+    <!-- Right side: Code -->
+    <div class="domain-slider__base"></div>
 
-  <div class="relative z-10 text-center">
-    <h1 class="text-5xl font-bold mb-6">Hi! I'm Mihaela Sava</h1>
-    <p class="text-2xl mb-8">My website will be blossoming soon!</p>
-    <p class="text-lg">
-      📧 <a href="mailto:contact@mihaela-sava.com"
-            class="underline hover:text-green-300 transition">contact@mihaela-sava.com</a>
-    </p>
+    <!-- Left side: Botany (revealed by sliding) -->
+    <div
+      class="domain-slider__overlay"
+      data-domain-slider-target="overlay"
+    >
+      <div class="domain-slider__text">
+        <h1 class="domain-slider__title">
+          My work is beginning to bloom.
+        </h1>
+
+        <p class="domain-slider__contact">
+          📩 <a href="mailto:contact@mihaela-sava.com">
+            contact@mihaela-sava.com
+          </a>
+        </p>
+      </div>
+    </div>
+
+    <input
+      type="range"
+      min="0"
+      max="100"
+      value="50"
+      class="domain-slider__range"
+      data-domain-slider-target="range"
+      data-action="input->domain-slider#slide"
+      aria-label="Slide between botany and code"
+    />
+
+    <div
+      class="domain-slider__handle"
+      data-domain-slider-target="handle"
+      aria-hidden="true">
+    </div>
   </div>
-</section>
+</main>
