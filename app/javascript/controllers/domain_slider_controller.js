@@ -1,8 +1,7 @@
 import { Controller } from "@hotwired/stimulus"
 
-// data-controller="domain-slider"
 export default class extends Controller {
-  static targets = ["overlay", "range", "handle"]
+  static targets = ["range", "handle"]
 
   connect() {
     this.update()
@@ -14,7 +13,7 @@ export default class extends Controller {
 
   update() {
     const value = this.rangeTarget.value
-    this.overlayTarget.style.width = `${value}%`
+    this.element.style.setProperty("--pos", `${value}%`)
     this.handleTarget.style.left = `${value}%`
   }
 }

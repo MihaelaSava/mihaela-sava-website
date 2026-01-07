@@ -3,30 +3,13 @@
     class="domain-slider"
     data-controller="domain-slider"
     style="
-      --left-domain: url('<%= asset_path('background.jpg') %>');
-      --right-domain: url('<%= asset_path('background_2.jpg') %>');
+      --left-domain: url('<%= asset_path('background_botanist.png') %>');
+      --right-domain: url('<%= asset_path('background_programmer.png') %>');
+      --pos: 50%;
     "
   >
-    <!-- Right side: Code -->
-    <div class="domain-slider__base"></div>
-
-    <!-- Left side: Botany (revealed by sliding) -->
-    <div
-      class="domain-slider__overlay"
-      data-domain-slider-target="overlay"
-    >
-      <div class="domain-slider__text">
-        <h1 class="domain-slider__title">
-          My work is beginning to bloom.
-        </h1>
-
-        <p class="domain-slider__contact">
-          📩 <a href="mailto:contact@mihaela-sava.com">
-            contact@mihaela-sava.com
-          </a>
-        </p>
-      </div>
-    </div>
+    <div class="domain-slider__img domain-slider__img--left"></div>
+    <div class="domain-slider__img domain-slider__img--right"></div>
 
     <input
       type="range"
@@ -39,10 +22,6 @@
       aria-label="Slide between botany and code"
     />
 
-    <div
-      class="domain-slider__handle"
-      data-domain-slider-target="handle"
-      aria-hidden="true">
-    </div>
+    <div class="domain-slider__handle" data-domain-slider-target="handle" aria-hidden="true"></div>
   </div>
 </main>
