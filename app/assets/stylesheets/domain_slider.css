@@ -49,4 +49,98 @@
   transform: translate(-50%, -50%);
   border-radius: 999px;
   background: white;
+  overflow: visible;
+}
+
+/* Mobile adjustment */
+@media (max-width: 768px) {
+
+  .domain-slider__handle::after {
+    top: 25%;
+    width: 22px;
+    height: 22px;
+  }
+}
+
+/* TEXT LABELS */
+.domain-slider__title {
+  position: absolute;
+  top: calc(25% + 2rem);
+  transform: translateY(-50%);
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 800;
+  color: white;
+  letter-spacing: 0.08em;
+  pointer-events: none;
+  text-shadow: 0 4px 20px rgba(0,0,0,0.45);
+  z-index: 3;
+}
+
+/* Botanist – at the far right of the left image */
+.domain-slider__title--right {
+  right: 6rem;
+  text-align: right;
+}
+
+/* Programmer – at the far left of the right image */
+.domain-slider__title--left {
+  left: 6rem;
+  text-align: left;
+}
+
+/* SUBTITLES */
+.domain-slider__subtitle {
+  position: absolute;
+  top: calc(25% + 5rem); /* slightly below the main label */
+  font-size: clamp(1rem, 4vw, 2rem);
+  font-weight: 400;
+  color: rgba(255,255,255,0.85);
+  letter-spacing: 0.06em;
+  pointer-events: none;
+  text-shadow: 0 3px 14px rgba(0,0,0,0.4);
+  z-index: 3;
+}
+
+/* Align with the main labels */
+.domain-slider__subtitle--right {
+  right: 6rem;
+  text-align: right;
+}
+
+.domain-slider__subtitle--left {
+  left: 6rem;
+  text-align: left;
+}
+
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+
+  .domain-slider__title {
+    top: calc(15% + 2rem);
+    font-size: clamp(1rem, 5vw, 1.5rem);
+    letter-spacing: 0.06em;
+  }
+
+  .domain-slider__title--right {
+    right: 0.5rem;
+  }
+
+  .domain-slider__title--left {
+    left: 0.5rem;
+  }
+
+  .domain-slider__subtitle {
+    top: calc(15% + 3rem);
+    font-size: clamp(0.60rem, 3vw, 0.80rem);
+    letter-spacing: 0.04em;
+  }
+
+  .domain-slider__subtitle--right {
+    right: 0.5rem;
+  }
+
+  .domain-slider__subtitle--left {
+    left: 0.5rem;
+  }
 }
