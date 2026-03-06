@@ -8,6 +8,4 @@ module Dev
     def etymology
     end
   end
-
-  def 
 end
