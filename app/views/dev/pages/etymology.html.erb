@@ -1,0 +1,27 @@
+<section class="mx-auto max-w-4xl px-6 py-20">
+  <header class="mb-16">
+    <h1 class="text-4xl font-bold tracking-tight text-gray-900">
+      Dev Etymology
+    </h1>
+    <p class="mt-4 max-w-2xl text-lg text-gray-600">
+      The origin and meaning of programming terms and commands.
+    </p>
+  </header>
+
+  <%= render Dev::EtymologyEntryComponent.new(
+    term: "sudo",
+    expansion: "super user do",
+    category: "command",
+    description: "Allows a permitted user to execute a command with elevated privileges.",
+    example: "sudo apt update",
+    note: "Use with care — this command can modify critical system files."
+  ) %>
+
+  <%= render Dev::EtymologyEntryComponent.new(
+    term: "bash",
+    expansion: "Bourne Again Shell",
+    category: "shell",
+    description: "A Unix shell and command language, named as a pun on the Bourne shell.",
+    example: "bash --version"
+  ) %>
+</section>

@@ -1,4 +1,5 @@
 <main class="home">
+  <!-- HERO -->
   <div
     class="domain-slider"
     data-controller="domain-slider"
@@ -7,7 +8,7 @@
       --right-domain: url('<%= asset_path('background_programmer.png') %>');
       --pos: 50%;
     "
-  >
+    >
     <div class="domain-slider__img domain-slider__img--left">
       <div class="domain-slider__title domain-slider__title--right">
         Botanist
@@ -39,4 +40,40 @@
 
     <div class="domain-slider__handle" data-domain-slider-target="handle" aria-hidden="true"></div>
   </div>
+
+  <!-- PROJECTS SECTION -->
+  <section class="py-20 px-4 md:px-8">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-10 max-w-6xl mx-auto">
+      <!-- In the Field Card -->
+      <div class="bg-white border border-gray-200 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300">
+        <%= image_tag "in_the_field.png", class: "h-80 w-full object-cover", alt: "In the Field" %>
+
+        <div class="p-8">
+          <h3 class="text-2xl font-bold text-gray-900 mb-3">In the Field</h3>
+          <p class="text-gray-700 mb-6 leading-relaxed">
+            I explore the beauty of plants, document field research, and share my botanical findings with other nature enthusiasts.
+          </p>
+          <a href="/" class="inline-block text-white bg-green-600 hover:bg-green-700 px-6 py-2 rounded-lg font-semibold transition-colors duration-200">
+            View Botany Projects
+          </a>
+        </div>
+      </div>
+
+      <!-- In the Code Card -->
+      <div class="bg-white border border-gray-200 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300">
+        <%= image_tag "in_the_code.png", class: "h-80 w-full object-cover", alt: "In the Code" %>
+
+        <div class="p-8">
+          <h3 class="text-2xl font-bold text-gray-900 mb-3">In the Code</h3>
+          <p class="text-gray-700 mb-6 leading-relaxed">
+            I dive into the world of coding to build logical solutions and craft clean, efficient code to solve problems.
+          </p>
+          <a href="/" class="inline-block text-white bg-blue-600 hover:bg-blue-700 px-6 py-2 rounded-lg font-semibold transition-colors duration-200">
+            Browse Dev Work
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
 </main>

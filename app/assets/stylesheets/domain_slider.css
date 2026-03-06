@@ -1,7 +1,15 @@
+.domain-slider {
+  position: relative;
+  height: 100vh;
+  max-height: 1080px;
+  width: 100%;
+  overflow: hidden;
+}
+
 .domain-slider__img {
   position: absolute;
   inset: 0;
-  background-size: 100%;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 

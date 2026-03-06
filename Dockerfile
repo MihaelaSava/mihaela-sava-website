@@ -44,6 +44,10 @@ RUN bundle install && \
 # Copy application code
 COPY . .
 
+# Install npm dependencies and build CSS
+RUN npm install && \
+    npm run build:css
+
 # Precompile bootsnap code for faster boot times
 RUN bundle exec bootsnap precompile app/ lib/
 
