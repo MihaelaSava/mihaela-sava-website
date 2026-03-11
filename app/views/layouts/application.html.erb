@@ -16,8 +16,10 @@
     <%= favicon_link_tag "favicon.ico" %>
     <link rel="apple-touch-icon" href="/icon.png">
 
-    <%# Tailwind CSS + custom styles built to app/assets/builds/application.css %>
+    <%# Tailwind CSS built to app/assets/builds/application.css %>
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    <%# Custom SCSS styles %>
+    <%= stylesheet_link_tag "custom", "data-turbo-track": "reload" %>
     <%= javascript_importmap_tags %>
   </head>
 
