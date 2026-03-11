@@ -2,3 +2,15 @@
 
 /* custom components */
 @import "../stylesheets/domain_slider.css";
+
+/* Base styles from home.scss */
+.home,
+.home * {
+  box-sizing: border-box;
+}
+
+.home {
+  width: 100%;
+  min-height: 100vh;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
