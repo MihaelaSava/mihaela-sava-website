@@ -50,8 +50,8 @@
 .domain-slider__handle::after {
   content: "";
   position: absolute;
-  top: 40%;
-  left: 50%;
+  top: 50%;
+  left: 48%;
   width: 28px;
   height: 28px;
   transform: translate(-50%, -50%);
