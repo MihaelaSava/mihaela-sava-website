@@ -1,5 +1,10 @@
 @import "tailwindcss";
 
+@source "../../views";
+@source "../../components";
+@source "../../helpers";
+@source "../../javascript";
+
 /* custom components */
 @import "../stylesheets/domain_slider.css";
 
