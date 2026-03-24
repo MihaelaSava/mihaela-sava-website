@@ -4,16 +4,15 @@ export default class extends Controller {
   static targets = ["message"]
 
   showMessage(event) {
-    // Prevent following any accidental links
     event.preventDefault()
     event.stopPropagation()
-    // Show the message
-    this.messageTarget.classList.remove("hidden")
-    this.messageTarget.classList.add("flex")
-    // Hide after 2 seconds
-    setTimeout(() => {
+    // Toggle the message
+    if (this.messageTarget.classList.contains("hidden")) {
+      this.messageTarget.classList.remove("hidden")
+      this.messageTarget.classList.add("flex")
+    } else {
       this.messageTarget.classList.add("hidden")
       this.messageTarget.classList.remove("flex")
-    }, 2000)
+    }
   }
 }
