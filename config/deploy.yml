@@ -2,9 +2,6 @@
 # Name of your application
 service: mihaela_sava_website
 
-# Remote git repository for Kamal deploys
-repo: git@github.com:MihaelaSava/mihaela-sava-website.git
-
 # Name of the container image
 image: mihaelaandreeasava/mihaela_sava_website
 
