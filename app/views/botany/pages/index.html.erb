@@ -1,0 +1,113 @@
+<section class="py-16 px-4 md:px-8">
+  <div class="max-w-5xl mx-auto">
+    <h1 class="text-4xl font-bold text-gray-900 mb-4">Botany Projects</h1>
+    <p class="text-lg text-gray-600 mb-12 leading-relaxed">
+      A collection of botanical explorations — documenting the flora I encounter in the field, season by season.
+    </p>
+
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+      <!-- Prevernal Flora Card -->
+      <a href="<%= botany_prevernal_flora_path %>"
+         class="group bg-white border border-gray-200 rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
+        <div class="h-56 bg-linear-to-br from-emerald-100 to-lime-50 flex items-center justify-center">
+          <span class="text-7xl group-hover:scale-110 transition-transform duration-300">🌱</span>
+        </div>
+        <div class="p-6">
+          <span class="inline-block text-xs font-semibold text-emerald-700 bg-emerald-50 px-2.5 py-1 rounded-full mb-3">
+            February – early March
+          </span>
+          <h3 class="text-xl font-bold text-gray-900 mb-2 group-hover:text-emerald-700 transition-colors">
+            Prevernal Flora
+          </h3>
+          <p class="text-gray-600 text-sm leading-relaxed">
+            Early spring wildflowers of Romania — snowdrops, crocuses, hellebores and other brave blooms that push through the last snow.
+          </p>
+        </div>
+      </a>
+
+      <!-- Vernal Flora Card -->
+      <a href="<%= botany_vernal_flora_path %>"
+         class="group bg-white border border-gray-200 rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
+        <div class="h-56 bg-linear-to-br from-green-100 to-yellow-50 flex items-center justify-center">
+          <span class="text-7xl group-hover:scale-110 transition-transform duration-300">🌷</span>
+        </div>
+        <div class="p-6">
+          <span class="inline-block text-xs font-semibold text-green-700 bg-green-50 px-2.5 py-1 rounded-full mb-3">
+            March – May
+          </span>
+          <h3 class="text-xl font-bold text-gray-900 mb-2 group-hover:text-green-700 transition-colors">
+            Vernal Flora
+          </h3>
+          <p class="text-gray-600 text-sm leading-relaxed">
+            Spring’s full bloom — anemones, cowslips, pasqueflowers and more.
+          </p>
+        </div>
+      </a>
+
+      <!-- Estival Flora Card (muted with message) -->
+      <div class="relative group bg-gray-100 border border-gray-200 rounded-xl overflow-hidden shadow-sm opacity-60 cursor-not-allowed select-none">
+        <div class="h-56 bg-linear-to-br from-gray-100 to-gray-200 flex items-center justify-center">
+          <span class="text-7xl">🌻</span>
+        </div>
+        <div class="p-6">
+          <span class="inline-block text-xs font-semibold text-gray-400 bg-gray-50 px-2.5 py-1 rounded-full mb-3">
+            June – August
+          </span>
+          <h3 class="text-xl font-bold text-gray-400 mb-2">
+            Estival Flora
+          </h3>
+          <p class="text-gray-400 text-sm leading-relaxed">
+            Summer meadows and forests — cornflowers, lilies, orchids and more.
+          </p>
+        </div>
+        <div class="absolute left-1/2 -translate-x-1/2 bottom-4 z-10 hidden group-hover:flex px-4 py-2 rounded-lg bg-gray-800 text-white text-xs shadow-lg transition-all duration-200 pointer-events-none">
+          Summer is just around the corner—please be a little more patient! 🌻
+        </div>
+      </div>
+
+      <!-- Autumnal Flora Card (muted with message) -->
+      <div class="relative group bg-gray-100 border border-gray-200 rounded-xl overflow-hidden shadow-sm opacity-60 cursor-not-allowed select-none">
+        <div class="h-56 bg-linear-to-br from-gray-100 to-gray-200 flex items-center justify-center">
+          <span class="text-7xl">🍁</span>
+        </div>
+        <div class="p-6">
+          <span class="inline-block text-xs font-semibold text-gray-400 bg-gray-50 px-2.5 py-1 rounded-full mb-3">
+            September – October
+          </span>
+          <h3 class="text-xl font-bold text-gray-400 mb-2">
+            Autumnal Flora
+          </h3>
+          <p class="text-gray-400 text-sm leading-relaxed">
+            Late bloomers — autumn crocus, gentians, cyclamen and more.
+          </p>
+        </div>
+        <div class="absolute left-1/2 -translate-x-1/2 bottom-4 z-10 hidden group-hover:flex px-4 py-2 rounded-lg bg-gray-800 text-white text-xs shadow-lg transition-all duration-200 pointer-events-none">
+          Autumn is fashionably late—just a little more patience, and I’ll make this autumn flora card available as well. 🍁
+        </div>
+      </div>
+
+      <!-- Hiemal Flora Card (muted with message) -->
+      <div class="relative group bg-gray-100 border border-gray-200 rounded-xl overflow-hidden shadow-sm opacity-60 cursor-not-allowed select-none">
+        <div class="h-56 bg-linear-to-br from-gray-100 to-gray-200 flex items-center justify-center">
+          <span class="text-7xl">❄️</span>
+        </div>
+        <div class="p-6">
+          <span class="inline-block text-xs font-semibold text-gray-400 bg-gray-50 px-2.5 py-1 rounded-full mb-3">
+            November – February
+          </span>
+          <h3 class="text-xl font-bold text-gray-400 mb-2">
+            Hiemal Flora
+          </h3>
+          <p class="text-gray-400 text-sm leading-relaxed">
+            Winter’s survivors — laurustinus, winter heath, Christmas rose and more.
+          </p>
+        </div>
+        <div class="absolute left-1/2 -translate-x-1/2 bottom-4 z-10 hidden group-hover:flex px-4 py-2 rounded-lg bg-gray-800 text-white text-xs shadow-lg transition-all duration-200 pointer-events-none">
+          Not cold enough yet! Please wait a bit longer for winter’s magic. ❄️
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>

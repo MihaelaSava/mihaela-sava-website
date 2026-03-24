@@ -15,9 +15,13 @@ Rails.application.routes.draw do
     get "etymology", to: "pages#etymology"
   end
 
-  # Botany section (reserved for future expansion)
+  # Botany section
   namespace :botany do
-    # get "plants", to: "pages#plants"
+    get "prevernal-flora", to: "pages#prevernal_flora"
+    get "vernal-flora", to: "pages#vernal_flora"
+    get "estival-flora", to: "pages#estival_flora"
+    get "autumnal-flora", to: "pages#autumnal_flora"
+    get "hiemal-flora", to: "pages#hiemal_flora"
   end
 
   # Articles
