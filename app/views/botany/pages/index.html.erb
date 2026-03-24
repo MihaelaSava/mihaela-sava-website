@@ -45,8 +45,9 @@
         </div>
       </a>
 
-      <!-- Estival Flora Card (muted with message) -->
-      <div class="relative group bg-gray-100 border border-gray-200 rounded-xl overflow-hidden shadow-sm opacity-60 cursor-not-allowed select-none">
+      <!-- Estival Flora Card (muted with message, mobile tap enabled) -->
+      <div class="relative group bg-gray-100 border border-gray-200 rounded-xl overflow-hidden shadow-sm opacity-60 cursor-not-allowed select-none"
+        data-controller="muted-card" data-action="click->muted-card#showMessage">
         <div class="h-56 bg-linear-to-br from-gray-100 to-gray-200 flex items-center justify-center">
           <span class="text-7xl">🌻</span>
         </div>
@@ -61,13 +62,15 @@
             Summer meadows and forests — cornflowers, lilies, orchids and more.
           </p>
         </div>
-        <div class="absolute left-1/2 -translate-x-1/2 bottom-4 z-10 hidden group-hover:flex px-4 py-2 rounded-lg bg-gray-800 text-white text-xs shadow-lg transition-all duration-200 pointer-events-none">
+        <div class="absolute left-1/2 -translate-x-1/2 bottom-4 z-10 hidden group-hover:flex px-4 py-2 rounded-lg bg-gray-800 text-white text-xs shadow-lg transition-all duration-200 pointer-events-none"
+          data-muted-card-target="message">
           Summer is just around the corner—please be a little more patient! 🌻
         </div>
       </div>
 
-      <!-- Autumnal Flora Card (muted with message) -->
-      <div class="relative group bg-gray-100 border border-gray-200 rounded-xl overflow-hidden shadow-sm opacity-60 cursor-not-allowed select-none">
+      <!-- Autumnal Flora Card (muted with message, mobile tap enabled) -->
+      <div class="relative group bg-gray-100 border border-gray-200 rounded-xl overflow-hidden shadow-sm opacity-60 cursor-not-allowed select-none"
+        data-controller="muted-card" data-action="click->muted-card#showMessage">
         <div class="h-56 bg-linear-to-br from-gray-100 to-gray-200 flex items-center justify-center">
           <span class="text-7xl">🍁</span>
         </div>
@@ -82,13 +85,15 @@
             Late bloomers — autumn crocus, gentians, cyclamen and more.
           </p>
         </div>
-        <div class="absolute left-1/2 -translate-x-1/2 bottom-4 z-10 hidden group-hover:flex px-4 py-2 rounded-lg bg-gray-800 text-white text-xs shadow-lg transition-all duration-200 pointer-events-none">
+        <div class="absolute left-1/2 -translate-x-1/2 bottom-4 z-10 hidden group-hover:flex px-4 py-2 rounded-lg bg-gray-800 text-white text-xs shadow-lg transition-all duration-200 pointer-events-none"
+          data-muted-card-target="message">
           Autumn is fashionably late—just a little more patience, and I’ll make this autumn flora card available as well. 🍁
         </div>
       </div>
 
-      <!-- Hiemal Flora Card (muted with message) -->
-      <div class="relative group bg-gray-100 border border-gray-200 rounded-xl overflow-hidden shadow-sm opacity-60 cursor-not-allowed select-none">
+      <!-- Hiemal Flora Card (muted with message, mobile tap enabled) -->
+      <div class="relative group bg-gray-100 border border-gray-200 rounded-xl overflow-hidden shadow-sm opacity-60 cursor-not-allowed select-none"
+        data-controller="muted-card" data-action="click->muted-card#showMessage">
         <div class="h-56 bg-linear-to-br from-gray-100 to-gray-200 flex items-center justify-center">
           <span class="text-7xl">❄️</span>
         </div>
@@ -103,7 +108,8 @@
             Winter’s survivors — laurustinus, winter heath, Christmas rose and more.
           </p>
         </div>
-        <div class="absolute left-1/2 -translate-x-1/2 bottom-4 z-10 hidden group-hover:flex px-4 py-2 rounded-lg bg-gray-800 text-white text-xs shadow-lg transition-all duration-200 pointer-events-none">
+        <div class="absolute left-1/2 -translate-x-1/2 bottom-4 z-10 hidden group-hover:flex px-4 py-2 rounded-lg bg-gray-800 text-white text-xs shadow-lg transition-all duration-200 pointer-events-none"
+          data-muted-card-target="message">
           Not cold enough yet! Please wait a bit longer for winter’s magic. ❄️
         </div>
       </div>
