@@ -1,0 +1,36 @@
+fr:
+  botany:
+    index:
+      title: "Projets de botanique"
+      description: "Une collection d’explorations botaniques — documentant la flore que je rencontre sur le terrain, saison après saison."
+
+      prevernal_period: "Février – début mars"
+      prevernal_title: "Flore prévernale"
+      prevernal_desc: "Les fleurs précoces du printemps en Roumanie — perce-neige, crocus, hellébores et autres fleurs courageuses qui percent la dernière neige."
+
+      vernal_period: "Mars – Mai"
+      vernal_title: "Flore vernale"
+      vernal_desc: "L’explosion du printemps — anémones, primevères, pulsatilles et autres."
+
+      estival_period: "Juin – Août"
+      estival_title: "Flore estivale"
+      estival_desc: "Prairies et forêts d’été — bleuets, lys, orchidées et autres."
+      estival_msg: "L’été approche — encore un peu de patience, s’il te plaît ! 🌻"
+
+      autumnal_period: "Septembre – Octobre"
+      autumnal_title: "Flore automnale"
+      autumnal_desc: "Les dernières fleurs de la saison — colchiques, gentianes, cyclamens et autres."
+      autumnal_msg: "L’automne se fait attendre avec élégance — encore un peu de patience et j’ajouterai aussi cette section. 🍁"
+
+      hiemal_period: "Novembre – Février"
+      hiemal_title: "Flore hivernale"
+      hiemal_desc: "Les survivantes de l’hiver — laurier, erica, rose de Noël et autres."
+      hiemal_msg: "Il ne fait pas encore assez froid ! Encore un peu de patience pour la magie de l’hiver. ❄️"
+
+  navbar:
+    home: "Accueil"
+    botany_projects: "Projets de botanique"
+    dev_projects: "Projets dev"
+    about: "À propos de moi"
+
+  brand: "Mihaela"

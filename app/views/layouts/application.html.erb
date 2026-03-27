@@ -23,19 +23,30 @@
 
   <body class="">
     <%= render NavbarComponent.new(
-      brand_name: "Mihaela",
       active_path: request.path,
       current_user: defined?(current_user) ? current_user : nil,
       items: [
-        { name: "Home", path: root_path },
-        { name: "Botany Projects", path: "/botany-projects" },
-        { name: "Dev Projects", path: "/dev-projects" },
-        { name: "About Me", path: about_path }
+        { name: t('navbar.home'), path: root_path },
+        { name: t('navbar.botany_projects'), path: "/botany-projects" },
+        { name: t('navbar.dev_projects'), path: "/dev-projects" },
+        { name: t('navbar.about'), path: about_path }
       ]
     ) %>
 
     <main class="min-h-[80vh]">
       <%= yield %>
+      <script>
+        // Set language switchers to current language
+        document.addEventListener('DOMContentLoaded', function() {
+          if (window.getLanguage) {
+            var lang = getLanguage();
+            var sel = document.getElementById('language-switcher');
+            if (sel) sel.value = lang;
+            var selMobile = document.getElementById('language-switcher-mobile');
+            if (selMobile) selMobile.value = lang;
+          }
+        });
+      </script>
     </main>
 
     <footer class="border-t border-gray-200 text-sm text-gray-600 text-center py-4">

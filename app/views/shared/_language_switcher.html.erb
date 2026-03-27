@@ -1,0 +1,36 @@
+<div class="relative inline-block text-left">
+  <details class="group">
+    <!-- Trigger -->
+    <summary class="flex items-center gap-2 cursor-pointer px-3 py-2 rounded-lg hover:bg-gray-100 transition">
+      <% current = language_options[I18n.locale] %>
+      <span><%= current[:flag] %></span>
+      <span class="text-sm font-medium"><%= I18n.locale.to_s.upcase %></span>
+
+      <!-- arrow -->
+      <svg class="w-4 h-4 text-gray-500 group-open:rotate-180 transition"
+           fill="none" stroke="currentColor" stroke-width="2"
+           viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round"
+              d="M19 9l-7 7-7-7" />
+      </svg>
+    </summary>
+
+    <!-- Dropdown -->
+    <div class="absolute right-0 mt-2 w-40 bg-white border border-gray-200 rounded-xl shadow-lg py-1 z-50">
+      <% language_options.each do |locale, data| %>
+        <% if locale == I18n.locale %>
+          <div class="flex items-center gap-2 px-4 py-2 text-sm font-semibold text-black bg-gray-100">
+            <span><%= data[:flag] %></span>
+            <span><%= data[:label] %></span>
+          </div>
+        <% else %>
+          <%= link_to url_for(locale: locale),
+                      class: "flex items-center gap-2 px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-black transition" do %>
+            <span><%= data[:flag] %></span>
+            <span><%= data[:label] %></span>
+          <% end %>
+        <% end %>
+      <% end %>
+    </div>
+  </details>
+</div>

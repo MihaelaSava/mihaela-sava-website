@@ -1,31 +1,36 @@
-# Files in the config/locales directory are used for internationalization and
-# are automatically loaded by Rails. If you want to use locales other than
-# English, add the necessary files in this directory.
-#
-# To use the locales, use `I18n.t`:
-#
-#     I18n.t "hello"
-#
-# In views, this is aliased to just `t`:
-#
-#     <%= t("hello") %>
-#
-# To use a different locale, set it with `I18n.locale`:
-#
-#     I18n.locale = :es
-#
-# This would use the information in config/locales/es.yml.
-#
-# To learn more about the API, please read the Rails Internationalization guide
-# at https://guides.rubyonrails.org/i18n.html.
-#
-# Be aware that YAML interprets the following case-insensitive strings as
-# booleans: `true`, `false`, `on`, `off`, `yes`, `no`. Therefore, these strings
-# must be quoted to be interpreted as strings. For example:
-#
-#     en:
-#       "yes": yup
-#       enabled: "ON"
-
 en:
-  hello: "Hello world"
+  botany:
+      index:
+      title: "Botany Projects"
+      description: "A collection of botanical explorations — documenting the flora I encounter in the field, season after season."
+
+      prevernal_period: "February – early March"
+      prevernal_title: "Prevernal flora"
+      prevernal_desc: "The early spring flowers of Romania — snowdrops, crocuses, hellebores, and other brave flowers pushing through the last snow."
+
+      vernal_period: "March – May"
+      vernal_title: "Vernal flora"
+      vernal_desc: "The explosion of spring — anemones, cowslips, pasque flowers, and more."
+
+      estival_period: "June – August"
+      estival_title: "Estival flora"
+      estival_desc: "Summer meadows and forests — cornflowers, lilies, orchids, and more."
+      estival_msg: "Summer is almost here — please be a little more patient! 🌻"
+
+      autumnal_period: "September – October"
+      autumnal_title: "Autumnal flora"
+      autumnal_desc: "The last flowers of the season — autumn crocus, gentians, cyclamen, and more."
+      autumnal_msg: "Autumn is fashionably late — just a little more patience and I will add this section too. 🍁"
+
+      hiemal_period: "November – February"
+      hiemal_title: "Hiemal flora"
+      hiemal_desc: "The survivors of winter — laurel, erica, Christmas rose, and more."
+      hiemal_msg: "It’s not cold enough yet! Please wait a little longer for the magic of winter. ❄️"
+
+  navbar:
+    home: "Home"
+    botany_projects: "Botany Projects"
+    dev_projects: "Dev Projects"
+    about: "About Me"
+
+  brand: "Mihaela"

@@ -1,0 +1,36 @@
+ro:
+  botany:
+    index:
+      title: "Proiecte de botanică"
+      description: "O colecție de explorări botanice — documentând flora pe care o întâlnesc pe teren, sezon după sezon."
+
+      prevernal_period: "Februarie – începutul lunii martie"
+      prevernal_title: "Flora prevernală"
+      prevernal_desc: "Florile timpurii ale primăverii din România — ghiocei, brândușe, spânz și alte flori curajoase care răzbat prin ultima zăpadă."
+
+      vernal_period: "Martie – Mai"
+      vernal_title: "Flora vernală"
+      vernal_desc: "Explozia primăverii — anemone, ciuboțica-cucului, pulsatilla și altele."
+
+      estival_period: "Iunie – August"
+      estival_title: "Flora estivală"
+      estival_desc: "Pajiști și păduri de vară — albăstrele, crini, orhidee și altele."
+      estival_msg: "Vara este aproape — te rog să mai ai puțină răbdare! 🌻"
+
+      autumnal_period: "Septembrie – Octombrie"
+      autumnal_title: "Flora autumnală"
+      autumnal_desc: "Ultimele flori ale sezonului — brândușa de toamnă, gențiene, cyclamen și altele."
+      autumnal_msg: "Toamna întârzie cu stil — încă puțină răbdare și voi adăuga și această secțiune. 🍁"
+
+      hiemal_period: "Noiembrie – Februarie"
+      hiemal_title: "Flora hiemală"
+      hiemal_desc: "Supraviețuitoarele iernii — laur, erica, trandafirul de Crăciun și altele."
+      hiemal_msg: "Încă nu este destul de frig! Mai ai puțină răbdare pentru magia iernii. ❄️"
+
+  navbar:
+    home: "Acasă"
+    botany_projects: "Proiecte de botanică"
+    dev_projects: "Proiecte de dezvoltare"
+    about: "Despre mine"
+
+  brand: "Mihaela"
