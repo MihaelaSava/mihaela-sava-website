@@ -1,4 +1,25 @@
 ro:
+  brand: "Mihaela"
+
+  navbar:
+    home: "Acasă"
+    botany_projects: "Botanică"
+    dev_projects: "Programare"
+    about: "Despre mine"
+
+  home:
+    cards:
+      field:
+        alt: "Pe teren"
+        title: "Pe teren"
+        description: "Explorez frumusețea plantelor, documentez cercetarea de teren și împărtășesc descoperirile mele botanice cu alți pasionați de natură."
+        cta: "Vezi proiectele de botanică"
+      code:
+        alt: "În cod"
+        title: "În cod"
+        description: "Explorez lumea programării pentru a construi soluții logice și cod curat, eficient, care rezolvă probleme."
+        cta: "Vezi proiectele dev"
+
   botany:
     index:
       title: "Proiecte de botanică"
@@ -10,7 +31,7 @@ ro:
 
       vernal_period: "Martie – Mai"
       vernal_title: "Flora vernală"
-      vernal_desc: "Explozia primăverii — anemone, ciuboțica-cucului, pulsatilla și altele."
+      vernal_desc: "Explozia primăverii — anemone, ciuboțica-cucului, pulsatila și altele."
 
       estival_period: "Iunie – August"
       estival_title: "Flora estivală"
@@ -25,12 +46,14 @@ ro:
       hiemal_period: "Noiembrie – Februarie"
       hiemal_title: "Flora hiemală"
       hiemal_desc: "Supraviețuitoarele iernii — laur, erica, trandafirul de Crăciun și altele."
-      hiemal_msg: "Încă nu este destul de frig! Mai ai puțină răbdare pentru magia iernii. ❄️"
+      hiemal_msg: "Încă nu este destul de frig! Trebuie să ai ceva mai multă răbdare ❄️"
 
-  navbar:
-    home: "Acasă"
-    botany_projects: "Proiecte de botanică"
-    dev_projects: "Proiecte de dezvoltare"
-    about: "Despre mine"
+  dev:
+    etymology:
+      subtitle: "Originea și semnificația termenilor și comenzilor din programare."
+      bash_desc: "Un shell Unix și un limbaj de comandă, numit ca un joc de cuvinte pe seama shell-ului Bourne."
+      sudo_desc: "Permite unui utilizator autorizat să execute o comandă cu privilegii ridicate."
+      bash_legend: "Shell-ul Bourne Shell (sh) a fost creat în anii ’70 de Stephen Bourne la Bell Labs, ca interfață principală pentru sistemul Unix. A devenit rapid standardul pentru scripting datorită simplității și portabilității sale. Totuși, pe măsură ce Unix s-a dezvoltat, au apărut limitări funcționale și fragmentare între diferite shell-uri, unele dintre ele neavând codul sursă liber.\n\nPentru a oferi o alternativă liberă și mai puternică, proiectul GNU Project a dezvoltat în 1989 Bash, creat de Brian Fox. Numele este un joc de cuvinte („Bourne Again”), indicând faptul că este o versiune modernizată a Bourne Shell. Bash păstrează compatibilitatea cu sh, dar adaugă funcționalități avansate precum completarea comenzilor, istoricul comenzilor și scripting mai puternic, devenind astfel shell-ul implicit pe majoritatea sistemelor Linux.\n\nDeci, Bash este Bourne Again Shell. 🙂"
 
-  brand: "Mihaela"
+  about:
+    description: "Cercetătoare a florei spontane și programator în formare: în ambele domenii păstrez o răbdare perenă. 💚"

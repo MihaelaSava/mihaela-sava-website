@@ -4,51 +4,7 @@
 
 <div class="w-full flex justify-center mt-8 relative">
   <p class="text-center text-lg text-gray-900 max-w-2xl pt-3 pb-5">
-
-    Wildflower researcher and programmer in the making: sprouting skills in code, blossoming in botany, and keeping kindness 
-
-    <span class="relative group inline-block">
-
-      <!-- word trigger -->
-      <button
-        tabindex="0"
-        class="decoration-1 underline-offset-4 decoration-gray-400 bg-transparent p-0 m-0 peer"
-      >
-        perennial
-      </button>.
-
-      <!-- info icon -->
-      <button 
-        tabindex="0"
-        class="hidden lg:inline-block -ml-0.5 text-gray-500 text-xs cursor-help align-super peer"
-        aria-label="Definition of perennial"
-      >
-        ⓘ
-      </button>
-
-      <!-- TOOLTIP: DESKTOP ONLY -->
-      <span
-        class="
-          hidden                           /* hidden everywhere by default */
-          lg:group-hover:block
-          lg:peer-focus:block
-
-          absolute z-50
-          rounded-xl bg-white text-gray-800 shadow-xl border border-gray-200 
-          px-4 py-3 text-sm leading-snug transition
-
-          /* desktop positioning */
-          lg:bottom-full lg:mb-2
-          lg:left-1/2 lg:-translate-x-1/2
-          lg:w-64
-        "
-      >
-        something that endures across seasons and returns again and again, quietly persistent (like perennial plants)
-      </span>
-
-    </span>
-
-    💚
+    <%= t('about.description') %>
   </p>
 </div>
 

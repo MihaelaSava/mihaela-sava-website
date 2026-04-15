@@ -1,6 +1,27 @@
 en:
+  brand: "Mihaela"
+  
+  navbar:
+    home: "Home"
+    botany_projects: "Botany Projects"
+    dev_projects: "Dev Projects"
+    about: "About Me"
+
+  home:
+    cards:
+      field:
+        alt: "In the Field"
+        title: "In the Field"
+        description: "I explore the beauty of plants, document field research, and share my botanical findings with other nature enthusiasts."
+        cta: "View Botany Projects"
+      code:
+        alt: "In the Code"
+        title: "In the Code"
+        description: "I dive into the world of coding to build logical solutions and craft clean, efficient code to solve problems."
+        cta: "Browse Dev Work"
+
   botany:
-      index:
+    index:
       title: "Botany Projects"
       description: "A collection of botanical explorations — documenting the flora I encounter in the field, season after season."
 
@@ -25,12 +46,14 @@ en:
       hiemal_period: "November – February"
       hiemal_title: "Hiemal flora"
       hiemal_desc: "The survivors of winter — laurel, erica, Christmas rose, and more."
-      hiemal_msg: "It’s not cold enough yet! Please wait a little longer for the magic of winter. ❄️"
+      hiemal_msg: "It’s not cold enough yet! You’ll need a bit more patience ❄️"
+    
+  dev:
+    etymology:
+      subtitle: "The origin and meaning of programming terms and commands."
+      sudo_desc: "Allows a permitted user to execute a command with elevated privileges."
+      bash_desc: "A Unix shell and command language, named as a pun on the Bourne shell."
+      bash_legend: "The Bourne Shell (sh) was created in the 1970s by Stephen Bourne at Bell Labs, as the main interface for the Unix system. It quickly became the standard for scripting due to its simplicity and portability. However, as Unix evolved, functional limitations and fragmentation between different shells appeared, some of them lacking freely available source code.\n\nTo provide a more powerful and free alternative, the GNU Project developed Bash in 1989, created by Brian Fox. The name is a play on words (“Bourne Again”), indicating that it is a modernized version of the Bourne Shell. Bash maintains compatibility with sh, but adds advanced features such as command completion, command history, and more powerful scripting, thus becoming the default shell on most Linux systems.\n\nSo, Bash is Bourne Again Shell. 🙂"
 
-  navbar:
-    home: "Home"
-    botany_projects: "Botany Projects"
-    dev_projects: "Dev Projects"
-    about: "About Me"
-
-  brand: "Mihaela"
+  about:
+    description: "Wildflower researcher and programmer in the making: sprouting skills in code, blossoming in botany, and keeping kindness perennial. 💚"

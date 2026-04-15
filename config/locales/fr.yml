@@ -1,4 +1,25 @@
 fr:
+  brand: "Mihaela"
+
+  navbar:
+    home: "Accueil"
+    botany_projects: "Projets de botanique"
+    dev_projects: "Projets dev"
+    about: "À propos de moi"
+
+  home:
+    cards:
+      field:
+        alt: "Sur le terrain"
+        title: "Sur le terrain"
+        description: "J’explore la beauté des plantes, documente mes recherches de terrain et partage mes découvertes botaniques avec d’autres passionnés de nature."
+        cta: "Voir les projets de botanique"
+      code:
+        alt: "Dans le code"
+        title: "Dans le code"
+        description: "J’explore le monde de la programmation pour créer des solutions logiques et écrire un code clair et efficace."
+        cta: "Voir les projets dev"
+
   botany:
     index:
       title: "Projets de botanique"
@@ -25,12 +46,14 @@ fr:
       hiemal_period: "Novembre – Février"
       hiemal_title: "Flore hivernale"
       hiemal_desc: "Les survivantes de l’hiver — laurier, erica, rose de Noël et autres."
-      hiemal_msg: "Il ne fait pas encore assez froid ! Encore un peu de patience pour la magie de l’hiver. ❄️"
+      hiemal_msg: "Il ne fait pas encore assez froid ! Il faudra un peu plus de patience ❄️"
+  
+  dev:
+    etymology:
+      subtitle: "L’origine et la signification des termes et commandes en programmation."
+      bash_desc: "Un shell Unix et un langage de commande, nommé comme un jeu de mots sur le shell Bourne."
+      sudo_desc: "Permet à un utilisateur autorisé d’exécuter une commande avec des privilèges élevés."
+      bash_legend: "Le Bourne Shell (sh) a été créé dans les années 1970 par Stephen Bourne aux Bell Labs, en tant qu’interface principale du système Unix. Il est rapidement devenu la référence pour l’écriture de scripts grâce à sa simplicité et sa portabilité. Cependant, avec l’évolution d’Unix, des limitations fonctionnelles et une fragmentation entre différents shells sont apparues, certains ne disposant pas d’un code source librement accessible.\n\nPour proposer une alternative libre et plus puissante, le projet GNU a développé Bash en 1989, créé par Brian Fox. Le nom est un jeu de mots (« Bourne Again »), indiquant qu’il s’agit d’une version modernisée du Bourne Shell. Bash reste compatible avec sh, tout en ajoutant des fonctionnalités avancées comme l’auto-complétion des commandes, l’historique des commandes et des capacités de scripting plus étendues, devenant ainsi le shell par défaut sur la plupart des systèmes Linux.\n\nAinsi, Bash signifie Bourne Again Shell. 🙂"
 
-  navbar:
-    home: "Accueil"
-    botany_projects: "Projets de botanique"
-    dev_projects: "Projets dev"
-    about: "À propos de moi"
-
-  brand: "Mihaela"
+  about:
+    description: "Chercheuse en fleurs sauvages et programmeuse en devenir : je développe mes compétences en programmation, m’épanouis en botanique et cultive une bienveillance vivace.💚"

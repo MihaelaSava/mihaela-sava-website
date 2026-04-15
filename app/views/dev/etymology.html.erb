@@ -4,7 +4,7 @@
       Dev Etymology
     </h1>
     <p class="mt-4 max-w-2xl text-lg text-gray-600">
-      The origin and meaning of programming terms and commands.
+      <%= t('dev.etymology.subtitle') %>
     </p>
   </header>
 
@@ -12,7 +12,7 @@
     term: "sudo",
     expansion: "super user do",
     category: "command",
-    description: "Allows a permitted user to execute a command with elevated privileges.",
+    description: t('dev.etymology.sudo_desc'),
     example: "sudo apt update",
     note: "Use with care — this command can modify critical system files."
   ) %>
@@ -21,7 +21,11 @@
     term: "bash",
     expansion: "Bourne Again Shell",
     category: "shell",
-    description: "A Unix shell and command language, named as a pun on the Bourne shell.",
+    description: t('dev.etymology.bash_desc'),
     example: "bash --version"
   ) %>
+
+  <div class="mt-8 p-5 bg-yellow-50 border-l-4 border-yellow-400 rounded shadow-sm">
+    <%= simple_format(t('dev.etymology.bash_legend')) %>
+  </div>
 </section>

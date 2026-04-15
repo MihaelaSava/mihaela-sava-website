@@ -8,8 +8,7 @@
 
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
       <!-- Prevernal Flora Card -->
-      <a href="<%= botany_prevernal_flora_path %>"
-         class="group bg-white border border-gray-200 rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
+      <div class="group bg-white border border-gray-200 rounded-xl overflow-hidden shadow-sm">
         <div class="h-56 bg-linear-to-br from-emerald-100 to-lime-50 flex items-center justify-center overflow-hidden">
           <img src="<%= asset_path('botany/Hellebrus_purpurascens.jpeg') %>" alt="Helleborus purpurascens (Purple hellebore)" class="object-cover h-56 w-full transition-transform duration-300 group-hover:scale-105" loading="lazy">
         </div>
@@ -24,11 +23,10 @@
             <%= t('botany.index.prevernal_desc') %>
           </p>
         </div>
-      </a>
+      </div>
 
       <!-- Vernal Flora Card -->
-      <a href="<%= botany_vernal_flora_path %>"
-         class="group bg-white border border-gray-200 rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
+      <div class="group bg-white border border-gray-200 rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
         <div class="h-56 bg-linear-to-br from-green-100 to-yellow-50 flex items-center justify-center overflow-hidden">
           <img src="<%= asset_path('botany/Anemone_nemorosa.jpeg') %>" alt="Anemone nemorosa (Wood anemone)" class="object-cover h-56 w-full transition-transform duration-300 group-hover:scale-105" loading="lazy">
         </div>
@@ -43,7 +41,7 @@
             <%= t('botany.index.vernal_desc') %>
           </p>
         </div>
-      </a>
+      </div>
 
       <!-- Estival Flora Card (muted with message, mobile tap enabled) -->
       <div class="relative group bg-gray-100 border border-gray-200 rounded-xl overflow-hidden shadow-sm opacity-60 cursor-not-allowed select-none"
