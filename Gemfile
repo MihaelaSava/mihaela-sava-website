@@ -18,6 +18,7 @@ gem "turbo-rails"
 gem "stimulus-rails"
 # Build JSON APIs with ease [https://github.com/rails/jbuilder]
 gem "jbuilder"
+gem "geocoder"
 
 # Stable version fully compatible with Rails 7.1
 gem "view_component", "~> 3.9"
