@@ -23,4 +23,4 @@ ro:
       bash_legend: "Shell-ul Bourne Shell (sh) a fost creat în anii ’70 de Stephen Bourne la Bell Labs, ca interfață principală pentru sistemul Unix. A devenit rapid standardul pentru scripting datorită simplității și portabilității sale. Totuși, pe măsură ce Unix s-a dezvoltat, au apărut limitări funcționale și fragmentare între diferite shell-uri, unele dintre ele neavând codul sursă liber.\n\nPentru a oferi o alternativă liberă și mai puternică, proiectul GNU Project a dezvoltat în 1989 Bash, creat de Brian Fox. Numele este un joc de cuvinte („Bourne Again”), indicând faptul că este o versiune modernizată a Bourne Shell. Bash păstrează compatibilitatea cu sh, dar adaugă funcționalități avansate precum completarea comenzilor, istoricul comenzilor și scripting mai puternic, devenind astfel shell-ul implicit pe majoritatea sistemelor Linux.\n\nDeci, Bash este Bourne Again Shell. 🙂"
 
   about:
-    description: "Programator în formare, concentrată pe software util și pe creștere constantă, cu răbdare și bunătate."
+    description: "Între plante sălbatice și linii de cod, învăț și cresc în fiecare zi. 🌿💻💚"
