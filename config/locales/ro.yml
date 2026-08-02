@@ -14,6 +14,8 @@ ro:
         title: "În cod"
         description: "Explorez lumea programării pentru a construi soluții logice și cod curat, eficient, care rezolvă probleme."
         cta: "Vezi proiectele dev"
+    instagram:
+      description: "Continui să lucrez la site-ul meu, dar până atunci, mă găsești pe Instagram."
 
   dev:
     etymology:
